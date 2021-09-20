@@ -17,3 +17,6 @@ class Test_User_Page(BaseTest):
         user_page = self.login_page.do_login(TestData.USER_NAME, TestData.PASSWORD)
         user_page.is_image_present()
 
+"""COMMAND FOR RUNNING TESTS : pytest Thirgd_Task/Tests/test_UserPage.py -v -s  -n 3 --html=./test_users.html
+-n 3 means parralel execution using pytest xdist
+--html=./test_users.html will create basic html report"""

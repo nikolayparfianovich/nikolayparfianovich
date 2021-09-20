@@ -18,3 +18,7 @@ class TestLogin(BaseTest):
     def test_login(self):
         self.login_page = LoginPage(self.driver)
         self.login_page.do_login(TestData.USER_NAME, TestData.PASSWORD)
+
+"""COMMAND FOR RUNNING TESTS : pytest Thirgd_Task/Tests/test_LoginPage.py -v -s  -n 3 --html=./test_login.html
+-n 3 means parralel execution using pytest xdist
+--html=./test_posters.html will create basic html report"""

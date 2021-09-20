@@ -11,3 +11,6 @@ class Test_Poster_Page(BaseTest):
         poster_page.left_comment()
         assert "thank you for your comment." in self.driver.page_source
 
+"""COMMAND FOR RUNNING TESTS : pytest Thirgd_Task/Tests/test_PostersPage.py -v -s  -n 3 --html=./test_posters.html
+-n 3 means parralel execution using pytest xdist
+--html=./test_posters.html will create basic html report"""
